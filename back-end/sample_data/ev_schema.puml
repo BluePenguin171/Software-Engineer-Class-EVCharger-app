@@ -1,0 +1,38 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+class Location {
+  access: int
+  address: string
+  available_station_count: int | null {nullable}
+  coming_soon: boolean
+  connector_types: array
+  icon: string
+  icon_type: string
+  id: int
+  in_use_station_count: int | null {nullable}
+  is_fast_charger: boolean
+  latitude: float
+  longitude: float
+  map_card_logo_url: string
+  name: string
+  score: float
+  station_count: int
+  thumbnail_url: string
+  under_repair: boolean
+  url: string
+}
+class Station {
+  id: int
+  network_id: int
+}
+class Outlet {
+  connector: int
+  id: int
+  kilowatts: float | null {nullable}
+  power: int
+  status: null | string {nullable}
+}
+Location "1" *-- "*" Station : stations
+Station "1" *-- "*" Outlet : outlets
+@enduml

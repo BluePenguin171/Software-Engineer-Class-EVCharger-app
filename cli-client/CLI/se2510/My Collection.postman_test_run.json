@@ -1,0 +1,859 @@
+{
+	"id": "2855d696-6797-4426-88c2-a6bd8a62bb4c",
+	"name": "My Collection",
+	"timestamp": "2026-02-13T12:45:47.755Z",
+	"collection_id": "52350141-884506e4-6334-4bd6-995b-f6082d6c0633",
+	"folder_id": 0,
+	"environment_id": "52350141-574a3752-efc6-48ed-8ea6-1a6950bc373d",
+	"totalPass": 52,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-02-13T12:45:41.959Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ac0602e7-7013-43b0-80a1-a80286cf7ddf",
+			"name": "healthcheck",
+			"url": "http://localhost:8000/admin/healthcheck",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "957a6104-1c73-4588-a1ae-82140a930f5c",
+			"name": "resetdb",
+			"url": "http://localhost:8000/admin/resetpoints",
+			"time": 1211,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1211
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "345fa829-edd9-4b5f-ae52-8b2ade5fd4fd",
+			"name": "addpoints",
+			"url": "http://localhost:8000/admin/addpoints",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				59
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "235014eb-1095-4875-b542-979fe2c3a07a",
+			"name": "healthcheck2",
+			"url": "http://localhost:8000/admin/healthcheck",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cac4acb3-0e5a-485d-9abc-5c124bb0097c",
+			"name": "available_points",
+			"url": "http://localhost:8000/points?status=available",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "48ecd77b-96f7-4927-ac5c-d299e884ed3e",
+			"name": "charging_points",
+			"url": "http://localhost:8000/points?status=charging",
+			"time": 12,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "1a3f1ac9-433e-47b2-adbd-920e27ac9eae",
+			"name": "offline_points",
+			"url": "http://localhost:8000/points?status=offline",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3a4ef489-7ff5-4bc2-9261-236fd3b14185",
+			"name": "pointX",
+			"url": "http://localhost:8000/point/1",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body contains status with value available": true,
+				"Point has pointid of x": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains status with value available": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of x": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body contains status with value available": true,
+					"Point has pointid of x": true
+				}
+			]
+		},
+		{
+			"id": "0b18386b-ffd2-4896-a880-0adca7d44ff0",
+			"name": "reserveX",
+			"url": "http://localhost:8000/reserve/1",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status field equals 'reserved'": true,
+				"Reservation end time is greater than request sent time": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status field equals 'reserved'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Reservation end time is greater than request sent time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status field equals 'reserved'": true,
+					"Reservation end time is greater than request sent time": true
+				}
+			]
+		},
+		{
+			"id": "65bc9fe0-69f4-419f-9418-f725a4644ebe",
+			"name": "reserved_points",
+			"url": "http://localhost:8000/points?status=reserved",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains exactly one point": true,
+				"Point has pointid of x": true,
+				"Point status is reserved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains exactly one point": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of x": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point status is reserved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains exactly one point": true,
+					"Point has pointid of x": true,
+					"Point status is reserved": true
+				}
+			]
+		},
+		{
+			"id": "f284d075-3c4f-47b5-8e8c-6e3886b3b997",
+			"name": "pointX2",
+			"url": "http://localhost:8000/point/1",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Point has pointid of x": true,
+				"Response body contains status with value reserved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of x": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains status with value reserved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Point has pointid of x": true,
+					"Response body contains status with value reserved": true
+				}
+			]
+		},
+		{
+			"id": "4ab0ce60-ee98-4d31-8df7-15a9fa2f9d60",
+			"name": "changeX",
+			"url": "http://localhost:8000/updpoint/1",
+			"time": 76,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Point has pointid of 1": true,
+				"Response body contains status with value available": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains status with value available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				76
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Point has pointid of 1": true,
+					"Response body contains status with value available": true
+				}
+			]
+		},
+		{
+			"id": "f65cf783-770d-47da-a4ff-1f92917dfea6",
+			"name": "pointX3",
+			"url": "http://localhost:8000/point/1",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Point has pointid of x": true,
+				"Response body contains status with value available": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of x": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains status with value available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Point has pointid of x": true,
+					"Response body contains status with value available": true
+				}
+			]
+		},
+		{
+			"id": "6296fcb2-88ba-4243-b122-976b101e1082",
+			"name": "reserveX2",
+			"url": "http://localhost:8000/reserve/1",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status field equals 'reserved'": true,
+				"Reservation end time is greater than request sent time": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status field equals 'reserved'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Reservation end time is greater than request sent time": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status field equals 'reserved'": true,
+					"Reservation end time is greater than request sent time": true
+				}
+			]
+		},
+		{
+			"id": "7025372a-67f3-40bb-b476-8c9dbdeedf67",
+			"name": "reserved_points2",
+			"url": "http://localhost:8000/points?status=reserved",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains exactly one point": true,
+				"Point has pointid of x": true,
+				"Point status is reserved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains exactly one point": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of x": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point status is reserved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains exactly one point": true,
+					"Point has pointid of x": true,
+					"Point status is reserved": true
+				}
+			]
+		},
+		{
+			"id": "f30f9c6a-ab06-4f1b-b26c-9a59082c5b09",
+			"name": "new_session",
+			"url": "http://localhost:8000/newsession",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f3697483-db00-475d-adb2-f526785865c0",
+			"name": "sessions",
+			"url": "http://localhost:8000/sessions/1/20260213/20260213?fr0m=20260213",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response returns only one point": true,
+				"First point has correct startime": true,
+				"First point has correct endtime": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response returns only one point": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First point has correct startime": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First point has correct endtime": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response returns only one point": true,
+					"First point has correct startime": true,
+					"First point has correct endtime": true
+				}
+			]
+		},
+		{
+			"id": "a6f7a373-9ac0-424a-91c9-151eb14c8b83",
+			"name": "pointstatus1",
+			"url": "http://localhost:8000/pointstatus/1/20260213/20260213?fr0m=20260213",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains exactly 3 points": true,
+				"First point has old_state 'available' and new_state 'reserved'": true,
+				"Second point has old_state 'reserved' and new_state 'available'": true,
+				"Third point has old_state 'available' and new_state 'reserved'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains exactly 3 points": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First point has old_state 'available' and new_state 'reserved'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Second point has old_state 'reserved' and new_state 'available'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Third point has old_state 'available' and new_state 'reserved'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains exactly 3 points": true,
+					"First point has old_state 'available' and new_state 'reserved'": true,
+					"Second point has old_state 'reserved' and new_state 'available'": true,
+					"Third point has old_state 'available' and new_state 'reserved'": true
+				}
+			]
+		},
+		{
+			"id": "ff786f4a-6a7b-4b63-abf2-11ef5b54b8f2",
+			"name": "pointX4",
+			"url": "http://localhost:8000/point/1",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Point has pointid of x": true,
+				"Response body contains status with value reserved": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Point has pointid of x": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains status with value reserved": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Point has pointid of x": true,
+					"Response body contains status with value reserved": true
+				}
+			]
+		},
+		{
+			"id": "a907c821-a5b6-4815-91b2-03e6a28d8032",
+			"name": "new_session2",
+			"url": "http://localhost:8000/newsession",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4a94bfb6-e7b0-4873-b6b3-e7c1cec195ae",
+			"name": "pointstatus2",
+			"url": "http://localhost:8000/pointstatus/1/20260213/20260213?fr0m=20260213",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains exactly 3 points": true,
+				"First point has old_state 'available' and new_state 'reserved'": true,
+				"Second point has old_state 'reserved' and new_state 'available'": true,
+				"Third point has old_state 'available' and new_state 'reserved'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains exactly 3 points": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First point has old_state 'available' and new_state 'reserved'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Second point has old_state 'reserved' and new_state 'available'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Third point has old_state 'available' and new_state 'reserved'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains exactly 3 points": true,
+					"First point has old_state 'available' and new_state 'reserved'": true,
+					"Second point has old_state 'reserved' and new_state 'available'": true,
+					"Third point has old_state 'available' and new_state 'reserved'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2192,
+	"collection": {
+		"requests": [
+			{
+				"id": "ac0602e7-7013-43b0-80a1-a80286cf7ddf",
+				"method": "GET"
+			},
+			{
+				"id": "957a6104-1c73-4588-a1ae-82140a930f5c",
+				"method": "POST"
+			},
+			{
+				"id": "345fa829-edd9-4b5f-ae52-8b2ade5fd4fd",
+				"method": "POST"
+			},
+			{
+				"id": "235014eb-1095-4875-b542-979fe2c3a07a",
+				"method": "GET"
+			},
+			{
+				"id": "cac4acb3-0e5a-485d-9abc-5c124bb0097c",
+				"method": "GET"
+			},
+			{
+				"id": "48ecd77b-96f7-4927-ac5c-d299e884ed3e",
+				"method": "GET"
+			},
+			{
+				"id": "1a3f1ac9-433e-47b2-adbd-920e27ac9eae",
+				"method": "GET"
+			},
+			{
+				"id": "3a4ef489-7ff5-4bc2-9261-236fd3b14185",
+				"method": "GET"
+			},
+			{
+				"id": "0b18386b-ffd2-4896-a880-0adca7d44ff0",
+				"method": "POST"
+			},
+			{
+				"id": "65bc9fe0-69f4-419f-9418-f725a4644ebe",
+				"method": "GET"
+			},
+			{
+				"id": "f284d075-3c4f-47b5-8e8c-6e3886b3b997",
+				"method": "GET"
+			},
+			{
+				"id": "4ab0ce60-ee98-4d31-8df7-15a9fa2f9d60",
+				"method": "POST"
+			},
+			{
+				"id": "f65cf783-770d-47da-a4ff-1f92917dfea6",
+				"method": "GET"
+			},
+			{
+				"id": "6296fcb2-88ba-4243-b122-976b101e1082",
+				"method": "POST"
+			},
+			{
+				"id": "7025372a-67f3-40bb-b476-8c9dbdeedf67",
+				"method": "GET"
+			},
+			{
+				"id": "f30f9c6a-ab06-4f1b-b26c-9a59082c5b09",
+				"method": "POST"
+			},
+			{
+				"id": "f3697483-db00-475d-adb2-f526785865c0",
+				"method": "GET"
+			},
+			{
+				"id": "a6f7a373-9ac0-424a-91c9-151eb14c8b83",
+				"method": "GET"
+			},
+			{
+				"id": "ff786f4a-6a7b-4b63-abf2-11ef5b54b8f2",
+				"method": "GET"
+			},
+			{
+				"id": "a907c821-a5b6-4815-91b2-03e6a28d8032",
+				"method": "POST"
+			},
+			{
+				"id": "4a94bfb6-e7b0-4873-b6b3-e7c1cec195ae",
+				"method": "GET"
+			}
+		]
+	}
+}
